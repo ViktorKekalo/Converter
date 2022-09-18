@@ -1,0 +1,92 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <h1>Metric/Imperial Unit Conversion</h1>
+
+        <input type="tel" id="amount">
+
+        <p class="error" id="error">
+            !Error. Use only numbers,please
+        </p>
+
+        <div class="check">
+            <input type="checkbox" id="length">
+            <label for="length">Length</label>
+        </div>
+
+        <div class="check">
+            <input type="checkbox" id="volume">
+            <label for="volume">Volume</label>
+        </div>
+
+        <div class="check">
+            <input type="checkbox" id="mass">
+            <label for="mass">Mass</label>
+        </div>
+
+        <button id="convert-btn">Convert</button>
+
+        <div class="result__item hide-res" id="length-box">
+
+            <h2>Length (Meter/Feet)</h2>
+
+            <div class="result__item-num">
+
+                <p id="meters-to-feet">Meters : Feet</p>
+
+                <span></span>
+
+                <p id="feet-to-meters">Feet : Meters</p>
+
+            </div>
+
+        </div>
+
+        <div class="result__item hide-res" id="volume-box">
+
+            <h2>Volume (Liters/Gallons)</h2>
+
+            <div class="result__item-num">
+
+                <p id="liters-to-gallons">Liters : Gallons</p>
+
+                <span></span>
+
+                <p id="gallons-to-liters">Gallons : Liters</p>
+
+            </div>
+
+        </div>
+
+        <div class="result__item hide-res" id="mass-box">
+
+            <h2>Mass (Kilograms/Pounds)</h2>
+
+            <div class="result__item-num">
+
+                <p id="kilo-to-pounds">Kilograms : Pounds</p>
+
+                <span></span>
+
+                <p id="pounds-to-kilo">Pounds : Kilograms</p>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
